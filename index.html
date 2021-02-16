@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="css/style.css">
+   <!-- seo -->
+   <meta name="description" content="simple to-do list app, you can add, edit and remove, hurry up dude let's test it.">
+   <meta name="keywords" content="to-do, todo, Js , javascript, vanilla js, pure js, HTML, css, github, codepen, jquery, fontawesome, google fonts, ahmed-dev, ahmed reda, ui, ux , design, todo app">
+   <meta property="og:type" content="Todo App" />
+   <meta property="og:title" content="Simple To-do app" />
+   <meta property="og:description" content="simple to-do list app, you can add, edit and remove, hurry up dude let's test it." />
+   <meta property="og:url" content="http://ahmed-dev.xyz/" />
+   <meta property="og:site_name" content="SITE NAME" />
+   <meta name="twitter:title" content="Simple To-do app">
+   <meta name="twitter:description" content="Dsimple to-do list app, you can add, edit and remove, hurry up dude let's test it.">
+   <meta name="twitter:site" content="http://ahmed-dev.xyz/">
+   <meta name="twitter:creator" content="http://ahmed-dev.xyz/">
+   <meta name="og:image" content="http://www.ahmed-dev.xyz/todo/img/bg.png" data-type="og:image">
+   <meta name="twitter:image" content="http://www.ahmed-dev.xyz/todo/img/bg.png" data-type="twitter:image">
+   <meta name="twitter:image:src" content="http://www.ahmed-dev.xyz/todo/img/bg.png" data-type="twitter:image">
+
+   <link rel="icon" href="img/icon.png" type="image/png">
+
+   <title>Simple To-do app</title>
+</head>
+<body> 
+    <!--todo list container  -->
+    <section class="todo_container">
+       <div class="todo_controls">
+          <form>
+             <label for="content" class="required_title">Enter a value <span class="required">*</span></label>
+          <div class="todo_main">
+                <input type="text" name="content" id="content" placeholder="Type todo content.." autocomplete="off" spellcheck="false" required title="Please don't click on button or press Enter button before enter value.">
+                <button class="btn_submit" name="content" type="submit" aria-label="submit button">
+                   <span class="btn_icon"></span>
+                </button>
+               </div>
+            </form>
+            <label for="check" class="check_date">
+               <input type="checkbox" name="check" id="check">
+                 Set date and time to each item
+            </label>
+       </div>
+
+       <div class="todo_control_items">
+          <button class="btn_todo btn_select_all">
+             Select All
+          </button>
+          <button class="btn_todo btn_delete_selected">
+             Delete Selected
+          </button>
+       </div>
+
+       <div class="todo_items_box">
+          <div class="items_container">
+
+          </div>
+         <p class="empty_content">
+            There are not many items to display
+         </p>
+          
+       </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="js/todo.js" type="text/javascript"></script>
+</body>
+</html>
